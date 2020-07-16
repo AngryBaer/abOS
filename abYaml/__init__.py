@@ -1,1 +1,1 @@
-from .api import read, read_docs
+from .api import read, read_docs, write, write_docs

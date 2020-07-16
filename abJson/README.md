@@ -1,5 +1,5 @@
 # abJson
-Simplified version of the json context manager allowing single line read/write operations.
+Simplified version of the JSON context manager allowing single line read/write operations.
 
 ## read
 Return a dictionary object from the given .json file path.
