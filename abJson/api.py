@@ -1,5 +1,5 @@
 """
-    Wrapper for the json library
+    Wrapper for the JSON library
 """
 
 
@@ -13,7 +13,7 @@ from json import load, dump
 # ----------------------------------------------------------------------------------------------- #
 def read(file_path, mode='r'):
     """
-    Returns the contents of a .json configuration file.
+    Returns the contents of a .json data file.
 
     :param   file_path:  (str) path to the file
     :return  json_data: (dict) data contained in the .json file
@@ -39,7 +39,7 @@ def write(file_path, json_data, mode='w+'):
 
     assert os.path.exists(target_folder), 'target folder does not exist: \n'  \
                                           '{}'.format(target_folder)
-    assert isinstance(json_data, dict),   'requires dict data type, given '  \
+    assert isinstance(json_data, dict),   'requires dict data type, given '   \
                                           '{}'.format(type(json_data))
 
     with open(file_path, mode) as json_file:
