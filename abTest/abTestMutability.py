@@ -26,6 +26,18 @@ def test_lists():
     pprint(test_list)
 
 
+def test_tuple():
+    # test pre-mutation
+    tuple_str = "test_string"
+    tuple_list = list()
+    test_tuple = (tuple_str, tuple_list)
+    pprint(test_tuple)
+
+    # test post-mutation
+    mutating_list(tuple_list)
+    pprint(test_tuple)
+
+
 def mutating_dict(testDict):
     testDict.setdefault("entry1", "data1")
     testDict.setdefault("entry2", "data2")
@@ -41,3 +53,4 @@ def mutating_list(testList):
 if __name__ == "__main__":
     test_dicts()
     test_lists()
+    test_tuple()
