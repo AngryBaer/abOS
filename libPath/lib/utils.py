@@ -5,16 +5,27 @@
 
 # IMPORTS --------------------------------------------------------------------------------------- #
 import os
-import platform
+# import platform
 # ----------------------------------------------------------------------------------------------- #
 
 
 # ----------------------------------------------------------------------------------------------- #
-def merge(path_in):
-    return os.path.join(paths_in[0], paths_in[1]).replace('\\', '/') 
+def conform(*args):
+    """
+    Change all slash characters to forward slashes.
+    Compliant with python path format to prevent shell script errors.
+
+    :param args:  path components
+                   - str, str, ...
+
+    :return path: joined path
+                   - str
+    """
+    return os.path.join(*args).replace('\\', '/') 
 
 
-def resolve(path_in):
+def resolve(*args):
+    # TODO: resolve paths between Windows & Linux mounts
     raise NotImplemented
 
 # ----------------------------------------------------------------------------------------------- #
