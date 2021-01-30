@@ -1,2 +1,5 @@
 
 settings_path: "<root>/settings/<name>.json"
+
+pattern_counter: "<prefix>_<name>_<suffix>_<counter>"
+
