@@ -1,14 +1,12 @@
 """
     Test for utilizing mutability without return values
 """
-
-
 from pprint import pprint
 
 
 def test_dicts():
     # test pre-mutation
-    test_dict = dict()
+    test_dict = {}
     pprint(test_dict)
 
     # test post-mutation
@@ -18,7 +16,7 @@ def test_dicts():
 
 def test_lists():
     # test pre-mutation
-    test_list = list()
+    test_list = []
     pprint(test_list)
 
     # test post-mutation
@@ -26,10 +24,10 @@ def test_lists():
     pprint(test_list)
 
 
-def test_tuple():
+def test_tuples():
     # test pre-mutation
     tuple_str = "test_string"
-    tuple_list = list()
+    tuple_list = []
     test_tuple = (tuple_str, tuple_list)
     pprint(test_tuple)
 
@@ -53,4 +51,4 @@ def mutating_list(testList):
 if __name__ == "__main__":
     test_dicts()
     test_lists()
-    test_tuple()
+    test_tuples()
