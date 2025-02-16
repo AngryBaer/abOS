@@ -43,5 +43,6 @@ def make_pattern(pattern_string: str) -> re.Pattern:
 
 # ----------------------------------------------------------------------------------------------- #
 if __name__ == "__main__":
+    print([d.path for d in iter_files(os.path.dirname(__file__))])
     print(dir_entry(__file__))  # >>> <DirEntry 'core.py'>
 # ----------------------------------------------------------------------------------------------- #
