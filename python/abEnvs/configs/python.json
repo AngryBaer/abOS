@@ -1,9 +1,9 @@
 {
-    "executable": "F:/python/python311/python.exe",
+    "executable": "P:/Python/3.11/python.exe",
     "PYTHONPATH": [
-        "AB_CODE_REPO/abOS/python",
-        "AB_CODE_REPO/abQT/python",
-        "AB_CODE_REPO/abSQL/python"
+        "<ENV-TOKEN>/abOS/python",
+        "<ENV-TOKEN>/abQT/python",
+        "<ENV-TOKEN>/abSQL/python"
     ],
     "dependencies": []
 }

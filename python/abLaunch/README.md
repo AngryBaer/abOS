@@ -3,8 +3,9 @@ Run apps from the command line
 
 ## Usage
 from command line
-```
->>> python -m abLaunch.cmd maya
+```bash
+>>> python -m abLaunch.cmd maya      # launch app in production mode
+>>> python -m abLaunch.cmd maya dev  # launch app in development mode
 ```
 from python
 ```python

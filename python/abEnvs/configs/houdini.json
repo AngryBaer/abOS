@@ -1,7 +1,7 @@
 {
     "executable": "C:/Program Files/Side Effects Software/Houdini 20.5.487/bin/houdini.exe",
     "PYTHONPATH": [
-        "AB_CODE_REPO/abHoudini/python"
+        "<ENV-TOKEN>/abHoudini/python"
     ],
     "dependencies": [
         "python"

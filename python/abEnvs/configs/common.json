@@ -1,3 +1,10 @@
 {
-    "AB_CODE_REPO": "F:/code"
+    "AB_DEVELOPMENT": {
+        "ENV_ROOT": "P:/dev",
+        "ENV_TOKEN": "<ENV-TOKEN>"
+    },
+    "AB_PRODUCTION": {
+        "ENV_ROOT": "P:/code",
+        "ENV_TOKEN": "<ENV-TOKEN>"
+    }
 }
