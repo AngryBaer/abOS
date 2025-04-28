@@ -1,0 +1,9 @@
+{
+    "executable": "C:/Program Files/Blender Foundation/Blender 4.4/blender.exe",
+    "PYTHONPATH": [
+        "<ENV-TOKEN>/abBlender/python"
+    ],
+    "dependencies": [
+        "python"
+    ]
+}

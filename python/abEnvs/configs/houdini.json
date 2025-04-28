@@ -1,5 +1,5 @@
 {
-    "executable": "C:/Program Files/Side Effects Software/Houdini 20.5.487/bin/houdini.exe",
+    "executable": "C:/Program Files/Side Effects Software/Houdini 20.5.550/bin/houdini.exe",
     "PYTHONPATH": [
         "<ENV-TOKEN>/abHoudini/python"
     ],
