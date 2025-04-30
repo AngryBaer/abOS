@@ -1,3 +1,2 @@
 
-from .core import test_repos
-test_repos()
+print(f"I'm here in {__file__}"
