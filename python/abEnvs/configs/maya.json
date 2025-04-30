@@ -1,9 +1,11 @@
 {
     "executable": "C:/Program Files/Autodesk/Maya2025/bin/maya.exe",
     "PYTHONPATH": [
+        "<ENV-TOKEN>/abQT/python",
         "<ENV-TOKEN>/abMaya/python"
     ],
     "dependencies": [
         "python"
-    ]
+    ],
+    "args": []
 }

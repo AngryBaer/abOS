@@ -1,6 +1,7 @@
 """
     Run app in a subprocess.
 """
+import os
 import subprocess
 from abEnvs import EnvSetup, EnvMode
 
@@ -16,4 +17,9 @@ def run_app(app_name: str, dev: bool = False):
     configuration.setup_envs()
     configuration.setup_paths()
 
-    subprocess.run(configuration.executable, check=True, shell=True)
+    command = f'"{configuration.executable}" {configuration.args_string}'
+    subprocess.run(command, check=True, shell=True)
+
+
+if __name__ == "__main__":
+    run_app("blender", dev=True)
