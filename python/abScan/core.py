@@ -9,25 +9,27 @@ import re
 def iter_files(root: os.PathLike, pattern: re.Pattern | None = None, symlinks: bool = False):
     """ Recursive files generator. """
     for item in os.scandir(root):
-        if item.is_file(follow_symlinks=symlinks):
+        if item.is_dir(follow_symlinks=symlinks):
+            yield from iter_files(item.path, pattern, symlinks)
+
+        elif item.is_file(follow_symlinks=symlinks):
             if pattern and pattern.search(item.name) is None:
                 continue
             yield item
 
-        elif item.is_dir(follow_symlinks=symlinks):
-            yield from iter_files(item.path, pattern, symlinks)
 
 
 def iter_dirs(root: os.PathLike, pattern: re.Pattern | None = None, symlinks: bool = False):
     """ Recursive directories generator. """
     for item in os.scandir(root):
         if item.is_dir(follow_symlinks=symlinks):
+            yield from iter_dirs(item.path, pattern, symlinks)
+
             if not pattern:
                 yield item
             elif pattern.search(item.name):
                 yield item
 
-            yield from iter_dirs(item.path, pattern, symlinks)
 
 
 def dir_entry(file_path: os.PathLike):
