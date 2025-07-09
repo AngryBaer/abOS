@@ -1,7 +1,6 @@
 """
     Run app in a subprocess.
 """
-import os
 import subprocess
 from abEnvs import EnvSetup, EnvMode
 

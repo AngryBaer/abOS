@@ -2,7 +2,8 @@
     "executable": "P:/Python/3.11/python.exe",
     "PYTHONPATH": [
         "<ENV-TOKEN>/abOS/python",
-        "<ENV-TOKEN>/abSQL/python"
+        "<ENV-TOKEN>/abSQL/python",
+        "<ENV-TOKEN>/abAssetPipe/python"
     ],
     "dependencies": [],
     "args": []
